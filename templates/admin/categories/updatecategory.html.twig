@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+modif categorie
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <h2 class="mt-4 text-center">Creation d une categorie</h2>
+
+        {#
+        j utilise la fonction de twig FORM pour afficher mon formulaire
+        et le nom de ma variable(formarticle) en parametre
+
+        #}
+
+        {{ form_start(form) }}
+        <div class="row justify-content-center">
+            <div class="col-3 text-center">{{ form_row(form.title) }}</div>
+            <div class="col-3 text-center">{{ form_row(form.color) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3 text-center">{{ form_row(form.creationDate) }}</div>
+            <div class="col-3 text-center">{{ form_row( form.publicationDate) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mt-4">{{ form_row(form.isPublished) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            {{ form_row(form.valider) }}
+        </div>
+        {{ form_rest(form)}}
+
+
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
+

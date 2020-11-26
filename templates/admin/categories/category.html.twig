@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ cats.title }}
+{% endblock %}
+
+{% block main %}
+    <div class="container text-center">
+        <h2 style="color: {{ cats.color }}">{{ cats.title }}</h2>
+        <h4>{{ cats.color }}</h4>
+    </div>
+{% endblock %}
+

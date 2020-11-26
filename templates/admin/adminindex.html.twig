@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+index admin
+{% endblock %}
+
+{% block main %}
+<h1 class="text-center mt-4 pt-4"> page d acueille de l admin</h1>
+<table class="table table-striped mt-4 ">
+    <thead>
+    <tr class="">
+        <th>Page</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Articles</td>
+        <td>
+            <a href="{{ path('admin-article-liste') }}" class="btn btn-secondary">Liste</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Categories</td>
+        <td>
+            <a href="{{ path('admin-categorie-list') }}" class="btn btn-secondary">Liste</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+{% endblock %}
+
