@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="pagination article admin">
+    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="ajout de form form_label et form_widget">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/article/insert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/insert.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/article/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/update.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CategoryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +187,8 @@
       <updated>1606414626271</updated>
       <workItem from="1606414627449" duration="9530000" />
       <workItem from="1606425419218" duration="12132000" />
-      <workItem from="1606480769072" duration="5462000" />
+      <workItem from="1606480769072" duration="6107000" />
+      <workItem from="1606487905129" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="reprise a zero &#10;ajout de la partie admin">
       <created>1606425481745</created>
@@ -219,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606486108142</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ajout de form form_label et form_widget">
+      <created>1606487091529</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606487091529</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +246,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reprise a zero &#10;ajout de la partie admin" />
     <MESSAGE value="pagination article admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination article admin" />
+    <MESSAGE value="ajout de form form_label et form_widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de form form_label et form_widget" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="419" key="#Composer" timestamp="1606414664282">
@@ -255,9 +262,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="746" y="263" key="NewPhpClassDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606424559311" />
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606486114615">
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606487096050">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606486114615" />
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606487096050" />
   </component>
 </project>
