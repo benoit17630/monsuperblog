@@ -14,21 +14,34 @@
 
         {{ form_start(formarticle) }}
         <div class="row justify-content-center">
-            <div class="col-3 text-center">{{ form_row(formarticle.title) }}</div>
-            <div class="col-3  text-center">{{ form_row(formarticle.image) }}</div>
+            <div class="col-3 text-center">{{ form_label(formarticle.title) }}</div>
+            <div class="col-3  text-center">{{ form_widget(formarticle.title) }}</div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-4 text-center">{{ form_row(formarticle.creationDate) }}</div>
-            <div class="col-4 text-center">{{ form_row( formarticle.publicationDate) }}</div>
+            <div class="col-3 text-center">{{ form_label(formarticle.image) }}</div>
+            <div class="col-3  text-center">{{ form_widget(formarticle.image) }}</div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-3 text-center">{{ form_row(formarticle.content) }}</div>
+            <div class="col-3 text-center">{{ form_label(formarticle.creationDate) }}</div>
+            <div class="col-3  text-center">{{ form_widget(formarticle.creationDate) }}</div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 text-center mt-4">{{ form_row(formarticle.isPublished) }}</div>
-        </div> <div class="row justify-content-center">
-            {{ form_row(formarticle.valider) }}
+            <div class="col-3 text-center">{{ form_label(formarticle.publicationDate) }}</div>
+            <div class="col-3  text-center">{{ form_widget(formarticle.publicationDate) }}</div>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-3 text-center">{{ form_label(formarticle.content) }}</div>
+            <div class="col-3 text-center">{{ form_widget(formarticle.content) }}</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3 text-center">{{ form_label(formarticle.isPublished) }}</div>
+            <div class="col-3  text-center">{{ form_widget(formarticle.isPublished) }}</div>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-3  text-center">{{ form_widget(formarticle.valider) }}</div>
+        </div>
+
         {{ form_rest(formarticle)}}
 
 

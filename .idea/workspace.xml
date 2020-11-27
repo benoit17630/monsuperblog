@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="pagination article admin">
-      <change afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AricleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AricleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/article/adminarticles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/adminarticles.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/articles/articles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/articles/articles.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/article/insert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/insert.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/article/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/update.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +189,7 @@
       <updated>1606414626271</updated>
       <workItem from="1606414627449" duration="9530000" />
       <workItem from="1606425419218" duration="12132000" />
-      <workItem from="1606480769072" duration="4514000" />
+      <workItem from="1606480769072" duration="5462000" />
     </task>
     <task id="LOCAL-00001" summary="reprise a zero &#10;ajout de la partie admin">
       <created>1606425481745</created>
@@ -217,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606472454873</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pagination article admin">
+      <created>1606486108141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606486108142</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,9 +255,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="746" y="263" key="NewPhpClassDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606424559311" />
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606472470582">
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606486114615">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606472470582" />
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606486114615" />
   </component>
 </project>
