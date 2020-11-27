@@ -72,7 +72,7 @@ class AdminCategoryController extends AbstractController
                 "la categorie a ete ajouter"
             );
 
-          return $this->redirectToRoute('admin-categorie-list');
+          return $this->redirectToRoute('admin-index');
         }
 
         $form =$formcategory->createView();

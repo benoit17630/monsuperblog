@@ -62,6 +62,13 @@ class AdminArticleController extends  AbstractController
             //alor je peut faire mon enregistrement
             $entityManager->persist($article);
             $entityManager->flush();
+            $this->addFlash(
+                'sucess',
+                "l article a ete créer"
+            );
+
+            //je retourne sur la page qui affiche tous les articles
+            return $this->redirectToRoute('admin-index');
         }
 
         // je prends le gabarit de formulaire récupéré et je créé une "vue" de formulaire avec
