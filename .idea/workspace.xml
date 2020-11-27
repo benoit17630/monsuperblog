@@ -20,16 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="reprise a zero &#10;ajout de la partie admin">
-      <change beforePath="$PROJECT_DIR$/.idea/monsuperblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/monsuperblog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/adminindex.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/adminindex.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/article/adminarticles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/adminarticles.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +154,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin/categories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/packages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -171,18 +166,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\monsuperblog\config\packages" />
+      <recent name="C:\MAMP\htdocs\monsuperblog\templates\admin\categories" />
+      <recent name="C:\MAMP\htdocs\monsuperblog\src" />
+      <recent name="C:\MAMP\htdocs\monsuperblog\src\Controller\Admin" />
+      <recent name="C:\MAMP\htdocs\monsuperblog\src\Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MAMP\htdocs\monsuperblog\templates\admin\categories" />
       <recent name="C:\MAMP\htdocs\monsuperblog\src\Controller\Admin" />
       <recent name="C:\MAMP\htdocs\monsuperblog\templates\admin\article" />
       <recent name="C:\MAMP\htdocs\monsuperblog\templates\admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\MAMP\htdocs\monsuperblog\templates\admin\categories" />
-      <recent name="C:\MAMP\htdocs\monsuperblog\src" />
-      <recent name="C:\MAMP\htdocs\monsuperblog\src\Controller\Admin" />
-      <recent name="C:\MAMP\htdocs\monsuperblog\src\Controller" />
-      <recent name="C:\MAMP\htdocs\monsuperblog\templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -194,7 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606414626271</updated>
       <workItem from="1606414627449" duration="9530000" />
-      <workItem from="1606425419218" duration="2093000" />
+      <workItem from="1606425419218" duration="6790000" />
     </task>
     <task id="LOCAL-00001" summary="reprise a zero &#10;ajout de la partie admin">
       <created>1606425481745</created>
@@ -203,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606425481745</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="reprise a zero &#10;ajout de la partie admin">
+      <created>1606466628643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606466628643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,17 +231,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="770" y="419" key="#Composer/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606414664282" />
-    <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606420738394">
+    <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606470216534">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606420738394" />
+    <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606470216534" />
     <state x="746" y="263" key="NewPhpClassDialog" timestamp="1606424559311">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="746" y="263" key="NewPhpClassDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606424559311" />
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606425492849">
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606466632270">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606425492849" />
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606466632270" />
   </component>
 </project>

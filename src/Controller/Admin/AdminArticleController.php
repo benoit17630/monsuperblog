@@ -8,6 +8,7 @@ use App\Entity\Article;
 use App\Form\ArticleType;
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,13 +19,36 @@ class AdminArticleController extends  AbstractController
 {
 
     /**
+     * @var ArticleRepository
+     */
+    private $repository;
+    /**
+     * @var EntityManagerInterface
+     */
+    private $manager;
+
+    public function __construct(ArticleRepository $repository, EntityManagerInterface $manager){
+        $this->repository= $repository;
+        $this->manager =$manager;
+    }
+
+    /**
      * @Route("admin/article-list", name="admin-article-liste")
-     * @param ArticleRepository $articleRepository
+     * @param PaginatorInterface $pagination
+     * @param Request $request
      * @return Response
      */
-    public function articleList(ArticleRepository $articleRepository){
+    public function articleList(PaginatorInterface $pagination, Request $request){
 
-        $articles = $articleRepository->findAll();
+
+        $articles = $pagination->paginate(
+
+          $this->repository->findAll(),
+              $request->query->getInt('page',1),
+            12
+
+        );
+
         return $this->render("admin/article/adminarticles.html.twig",[
             'articles'=>$articles
         ]);
@@ -81,9 +105,12 @@ class AdminArticleController extends  AbstractController
             'formarticle' => $formarticle
         ]);
     }
+
     /**
      * @Route ("admin/article-update/{id}", name="admin-article-update")
+     * @param $id
      * @param Request $request
+     * @param ArticleRepository $articleRepository
      * @param EntityManagerInterface $entityManager
      * @return Response
      */
