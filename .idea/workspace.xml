@@ -19,12 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="reprise a zero &#10;ajout de la partie admin">
-      <change afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yml" afterDir="false" />
+    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="pagination article admin">
+      <change afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AricleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AricleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/article/adminarticles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/adminarticles.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/articles/articles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/articles/articles.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +193,8 @@
       <option name="presentableId" value="Default" />
       <updated>1606414626271</updated>
       <workItem from="1606414627449" duration="9530000" />
-      <workItem from="1606425419218" duration="6790000" />
+      <workItem from="1606425419218" duration="12132000" />
+      <workItem from="1606480769072" duration="4514000" />
     </task>
     <task id="LOCAL-00001" summary="reprise a zero &#10;ajout de la partie admin">
       <created>1606425481745</created>
@@ -205,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606466628643</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pagination article admin">
+      <created>1606472454873</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606472454873</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,27 +233,29 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reprise a zero &#10;ajout de la partie admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="reprise a zero &#10;ajout de la partie admin" />
+    <MESSAGE value="pagination article admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagination article admin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="419" key="#Composer" timestamp="1606414664282">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="770" y="419" key="#Composer/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606414664282" />
-    <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606470216534">
+    <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606473874820">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606470216534" />
+    <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606473874820" />
     <state x="746" y="263" key="NewPhpClassDialog" timestamp="1606424559311">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="746" y="263" key="NewPhpClassDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606424559311" />
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606466632270">
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606472470582">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606466632270" />
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606472470582" />
   </component>
 </project>

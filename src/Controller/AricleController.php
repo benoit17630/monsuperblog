@@ -5,7 +5,9 @@ namespace App\Controller;
 
 
 use App\Repository\ArticleRepository;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -13,12 +15,27 @@ class AricleController extends AbstractController
 
 {
 
+
     /**
      * @Route("/article-list", name="article-liste")
+     * @param PaginatorInterface $pagination
+     * @param Request $request
+     * @param ArticleRepository $repository
+     * @return Response
      */
-    public function articleList(ArticleRepository $articleRepository){
+    public function articleList(PaginatorInterface $pagination,
+                                Request $request,
+                                ArticleRepository $repository){
 
-        $articles = $articleRepository->findAll();
+        $articles = $pagination->paginate(
+
+           $repository->findAll(),
+            $request->query->getInt('page',1),
+            12
+
+        );
+
+
         return $this->render("user/articles/articles.html.twig",[
             'articles'=>$articles
         ]);

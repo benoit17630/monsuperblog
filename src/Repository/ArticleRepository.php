@@ -6,8 +6,7 @@ use App\Entity\Article;
 
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
-use Doctrine\ORM\Query;
-use Doctrine\ORM\QueryBuilder;
+
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -24,32 +23,9 @@ class ArticleRepository extends ServiceEntityRepository
     }
 
 
-    /**
-     *  @return Query
-     */
-    public function findAllVisibleQuery(): Query
-    {
-        return $this->findVisibleQuery()
-            ->getQuery()
-            ;
 
-    }
 
-    /**
-     * @return Article[]
-     */
-    public function findLatest(): array
-    {
-        return $this->findVisibleQuery()
-            ->setMaxResults(12)
-            ->getQuery()
-            ->getResult();
-    }
-    private function findVisibleQuery(): QueryBuilder
-    {
-        return $this->createQueryBuilder('article')
-            ->where('article.isPublished = false');
-    }
+
     // /**
     //  * @return Article[] Returns an array of Article objects
     //  */

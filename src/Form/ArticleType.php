@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Article;
+use Doctrine\DBAL\Types\DateType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -20,7 +21,8 @@ class ArticleType extends AbstractType
             ->add('title')
             ->add('content')
             ->add('image')
-            ->add('publicationDate')
+            ->add('publicationDate' , DateType::class[
+                'widget'  ])
             ->add('creationDate')
             ->add('isPublished')
             ->add( "valider", SubmitType::class)

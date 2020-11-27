@@ -18,32 +18,23 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminArticleController extends  AbstractController
 {
 
-    /**
-     * @var ArticleRepository
-     */
-    private $repository;
-    /**
-     * @var EntityManagerInterface
-     */
-    private $manager;
-
-    public function __construct(ArticleRepository $repository, EntityManagerInterface $manager){
-        $this->repository= $repository;
-        $this->manager =$manager;
-    }
+    
 
     /**
      * @Route("admin/article-list", name="admin-article-liste")
+     * @param ArticleRepository $repository
      * @param PaginatorInterface $pagination
      * @param Request $request
      * @return Response
      */
-    public function articleList(PaginatorInterface $pagination, Request $request){
+    public function articleList(ArticleRepository $repository,
+                                PaginatorInterface $pagination,
+                                Request $request){
 
 
         $articles = $pagination->paginate(
 
-          $this->repository->findAll(),
+          $repository->findAll(),
               $request->query->getInt('page',1),
             12
 
