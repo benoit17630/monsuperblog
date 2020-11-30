@@ -22,24 +22,32 @@ class ArticleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('content')
+            //pour traduire le title en titre je doit dir que le Type est null et je precise le label du nom de ma collone en fr
+            ->add('title', null,[
+                "label"=>'Titre'
+            ])
+            ->add('content',null,["label"=> 'Text'])
             ->add('image')
             ->add('publicationDate', DateType::class, [
-                'widget' => 'single_text'
+                'widget' => 'single_text',
+                'label'=> "Date de publication"
 
             ])
             ->add('creationDate',DateType::class,[
-                'widget'=>'single_text'])
-            ->add('isPublished')
+                'widget'=>'single_text',
+                'label'=> "Date de creation"])
+            ->add('isPublished',null,
+                ["label"=>"publier ?"])
             ->add( "valider", SubmitType::class)
+            //je cree le choix des category dans mon formulaire grace a EntityType::class
             ->add("category", EntityType::class,[
+                //je dite dans quelle entity le choix est
                 "class"=> Category::class,
-                    "choice_label"=>"title"]
-                )
-
-
-        ;
+                // je choisi la collone qui va etre afficher
+                "choice_label"=>"title",
+                //je renome en fr car mes utilisateur seront francais
+                "label" => "Categorie"
+                    ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)

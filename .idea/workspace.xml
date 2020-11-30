@@ -19,16 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="ajout des contraintes">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201130120958.php" afterDir="false" />
+    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="jointure table + modif formulaire pour ajouter une categorie a un article">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CategoryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/article/insert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/insert.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/article/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/update.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/articles/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/articles/article.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +197,7 @@
       <workItem from="1606500916254" duration="613000" />
       <workItem from="1606570088216" duration="68000" />
       <workItem from="1606592451987" duration="600000" />
-      <workItem from="1606724756385" duration="16682000" />
+      <workItem from="1606724756385" duration="18626000" />
     </task>
     <task id="LOCAL-00001" summary="reprise a zero &#10;ajout de la partie admin">
       <created>1606425481745</created>
@@ -269,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606730129313</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="jointure table + modif formulaire pour ajouter une categorie a un article">
+      <created>1606744710859</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606744710859</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +293,8 @@
     <MESSAGE value="pagination article admin" />
     <MESSAGE value="ajout de form form_label et form_widget" />
     <MESSAGE value="ajout des contraintes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout des contraintes" />
+    <MESSAGE value="jointure table + modif formulaire pour ajouter une categorie a un article" />
+    <option name="LAST_COMMIT_MESSAGE" value="jointure table + modif formulaire pour ajouter une categorie a un article" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="419" key="#Composer" timestamp="1606414664282">
@@ -312,9 +313,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="462" y="185" key="SettingsEditor/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606494524893" />
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606730132692">
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606744715824">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606730132692" />
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606744715824" />
   </component>
 </project>
