@@ -23,6 +23,7 @@ class CategoryType extends AbstractType
                 'widget'=>'single_text'])
             ->add('isPublished')
             ->add( "valider", SubmitType::class)
+
         ;
     }
 
