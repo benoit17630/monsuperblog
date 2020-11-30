@@ -56,6 +56,7 @@ class Category
 
     /**
      * @ORM\OneToMany(targetEntity=Article::class, mappedBy="category")
+     *
      * La propriété articles représente la relation inverse du ManyToOne
      * C'est donc un OneToMany. Il cible l'entité Article. Le mappedBy
      * représente la propriété dans l'entité Article, qui re-pointe vers
