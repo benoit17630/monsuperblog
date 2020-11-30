@@ -3,7 +3,9 @@
 namespace App\Entity;
 
 use App\Repository\ArticleRepository;
+use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ArticleRepository::class)
@@ -19,31 +21,44 @@ class Article
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length( min="4", max="255",
+     *     minMessage="ton titre est trop court",
+     *     maxMessage="ton titre est trop long")
      */
     private $title;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Length (min="4", max="255",
+     *     minMessage="trop peu de lettres",
+     *      maxMessage="ta description est trop longue")
      */
     private $content;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Regex("([^\s]+(\.(?i)(jpg|png|gif|bmp))$)",
+     *     message="se n est pas une image")
+     *
      */
     private $image;
 
     /**
      * @ORM\Column(type="date", nullable=true)
+     *
      */
     private $creationDate;
 
     /**
      * @ORM\Column(type="date", nullable=true)
+     *
+     *
      */
     private $publicationDate;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
+     * @Assert\Type(type="boolean")
      */
     private $isPublished;
 
@@ -88,24 +103,24 @@ class Article
         return $this;
     }
 
-    public function getCreationDate(): ?\DateTimeInterface
+    public function getCreationDate(): ?DateTimeInterface
     {
         return $this->creationDate;
     }
 
-    public function setCreationDate(?\DateTimeInterface $creationDate): self
+    public function setCreationDate(?DateTimeInterface $creationDate): self
     {
         $this->creationDate = $creationDate;
 
         return $this;
     }
 
-    public function getPublicationDate(): ?\DateTimeInterface
+    public function getPublicationDate(): ?DateTimeInterface
     {
         return $this->publicationDate;
     }
 
-    public function setPublicationDate(?\DateTimeInterface $publicationDate): self
+    public function setPublicationDate(?DateTimeInterface $publicationDate): self
     {
         $this->publicationDate = $publicationDate;
 

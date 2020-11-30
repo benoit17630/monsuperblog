@@ -3,7 +3,9 @@
 namespace App\Entity;
 
 use App\Repository\CategoryRepository;
+use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=CategoryRepository::class)
@@ -19,26 +21,34 @@ class Category
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min="4", max="50",
+     *     minMessage="votre titre doit etre de 4 lettre au minimum"
+     * maxMessage="votre titre ne doit pas depasser 50 lettres")
      */
     private $title;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Regex("^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+     *     message="votre couleur n est pas une couleur hexadecimal")
      */
     private $color;
 
     /**
      * @ORM\Column(type="date", nullable=true)
+     *
      */
     private $publicationDate;
 
     /**
      * @ORM\Column(type="date", nullable=true)
+     *
      */
     private $creationDate;
 
     /**
      * @ORM\Column(type="boolean", nullable=true)
+     * @Assert\Type(type="boolean")
      */
     private $isPublished;
 
@@ -71,24 +81,24 @@ class Category
         return $this;
     }
 
-    public function getPublicationDate(): ?\DateTimeInterface
+    public function getPublicationDate(): ?DateTimeInterface
     {
         return $this->publicationDate;
     }
 
-    public function setPublicationDate(?\DateTimeInterface $publicationDate): self
+    public function setPublicationDate(?DateTimeInterface $publicationDate): self
     {
         $this->publicationDate = $publicationDate;
 
         return $this;
     }
 
-    public function getCreationDate(): ?\DateTimeInterface
+    public function getCreationDate(): ?DateTimeInterface
     {
         return $this->creationDate;
     }
 
-    public function setCreationDate(?\DateTimeInterface $creationDate): self
+    public function setCreationDate(?DateTimeInterface $creationDate): self
     {
         $this->creationDate = $creationDate;
 
