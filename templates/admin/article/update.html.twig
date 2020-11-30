@@ -13,6 +13,7 @@
         #}
 
         {{ form_start(formarticle) }}
+        {{ form_errors(formarticle) }}
         <div class="row justify-content-center">
             <div class="col-3 text-center">{{ form_label(formarticle.title) }}</div>
             <div class="col-3  text-center">{{ form_widget(formarticle.title) }}</div>
