@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="ajout du formulaire d inscription">
+    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="ajout du formulaire d inscription + choix du role a metre que pour l admin">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201201140711.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +200,7 @@
       <workItem from="1606500916254" duration="613000" />
       <workItem from="1606570088216" duration="68000" />
       <workItem from="1606592451987" duration="600000" />
-      <workItem from="1606724756385" duration="39773000" />
+      <workItem from="1606724756385" duration="44060000" />
     </task>
     <task id="LOCAL-00001" summary="reprise a zero &#10;ajout de la partie admin">
       <created>1606425481745</created>
@@ -304,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606827604316</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ajout du formulaire d inscription + choix du role a metre que pour l admin">
+      <created>1606828223319</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606828223319</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +342,8 @@
     <MESSAGE value="securisation de la zone admin" />
     <MESSAGE value="ajout d un bouton se deconecter que si ont est connecter" />
     <MESSAGE value="ajout du formulaire d inscription" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout du formulaire d inscription" />
+    <MESSAGE value="ajout du formulaire d inscription + choix du role a metre que pour l admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout du formulaire d inscription + choix du role a metre que pour l admin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="419" key="#Composer" timestamp="1606414664282">
@@ -351,9 +362,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="462" y="185" key="SettingsEditor/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606494524893" />
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606827607777">
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606828227433">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606827607777" />
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606828227433" />
   </component>
 </project>

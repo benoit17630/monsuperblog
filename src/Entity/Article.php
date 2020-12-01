@@ -41,7 +41,7 @@ class Article
      *     message="se n est pas une image")
  */
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", nullable=true)
      * a rajouter les lignes du haut
      * la je les ait commenter car dans mes fixture faker sa ma generer des lien d image sans extension
      *

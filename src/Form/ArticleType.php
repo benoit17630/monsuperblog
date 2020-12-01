@@ -32,7 +32,7 @@ class ArticleType extends AbstractType
             ->add('image', FileType::class,[
                 'mapped'=> false,
                 'required'=> false,
-                'constraints'=>[
+              /*  'constraints'=>[
                     new File([
                         'mimeTypes'=>[
                             'aplication/jpeg',
@@ -40,7 +40,7 @@ class ArticleType extends AbstractType
                         ],
                         'mimeTypesMessage'=>'upload une image',
                     ])
-                ],
+                ],*/
             ])
 
             ->add('publicationDate', DateType::class, [
