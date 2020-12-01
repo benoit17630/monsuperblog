@@ -10,9 +10,11 @@ use App\Repository\ArticleRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\String\Slugger\SluggerInterface;
 
 
 class AdminArticleController extends  AbstractController
@@ -49,14 +51,16 @@ class AdminArticleController extends  AbstractController
      * @Route ("admin/article-insert", name="admin-article-insert")
      * @param Request $request
      * @param EntityManagerInterface $entityManager
+     * @param SluggerInterface $slugger
      * @return Response
      */
-    public function insertArticle(Request $request, EntityManagerInterface $entityManager)
+    public function insertArticle(Request $request, EntityManagerInterface $entityManager, SluggerInterface $slugger)
     {
 
         // Je créé une nouvelle instance de l'entité Article
         // pour créer un nouveau enregistrement en bdd
         $article = new Article();
+
 
         // je veux afficher un formulaire pour créer des articles
         // donc je viens récupérer le gabarit de formulaire ArticleType créé en ligne de commandes
@@ -74,12 +78,47 @@ class AdminArticleController extends  AbstractController
         // si le formulaire a été envoyé et qu'il est valide
         if ($form->isSubmitted() && $form->isValid()) {
 
+            $imagefile = $form->get('image')->getData();
+
+            if ($imagefile){
+
+                $originalFilename = pathinfo($imagefile->getClientOriginalName(),PATHINFO_FILENAME);
+
+                $safeFilename= $slugger->slug($originalFilename);
+
+                $newFilename = $safeFilename.'_'.uniqid().'.'.$imagefile->guessextension();
+
+                try {
+                    $imagefile->move(
+
+                        $this->getParameter('images_directory'),
+
+                        $newFilename
+
+                    );
+
+                }catch (FileException $exception){
+
+                }
+
+                $article->setImage($newFilename);
+
+            }
+
+
+
+
             //alor je peut faire mon enregistrement
             $entityManager->persist($article);
+
             $entityManager->flush();
+
             $this->addFlash(
+
                 'sucess',
+
                 "l article a ete créer"
+
             );
 
             //je retourne sur la page qui affiche tous les articles
