@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="ajout de l insert d image mais tjr un problem">
+      <change afterPath="$PROJECT_DIR$/public/upload/articles/camelballs_5fc653c2ef75c.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/articles/articles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/articles/articles.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +199,7 @@
       <workItem from="1606500916254" duration="613000" />
       <workItem from="1606570088216" duration="68000" />
       <workItem from="1606592451987" duration="600000" />
-      <workItem from="1606724756385" duration="44468000" />
+      <workItem from="1606724756385" duration="45424000" />
     </task>
     <task id="LOCAL-00001" summary="reprise a zero &#10;ajout de la partie admin">
       <created>1606425481745</created>
@@ -317,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606832487747</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ajout de l insert d image mais tjr un problem">
+      <created>1606832719027</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606832719027</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,9 +376,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="462" y="185" key="SettingsEditor/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606494524893" />
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606832495524">
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606832722971">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606832495524" />
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606832722971" />
   </component>
 </project>

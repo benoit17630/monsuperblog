@@ -16,7 +16,7 @@
         <h2 class="col-12">{{ article.title }}</h2>
         <div class="row align-items-center justify-content-around mt-5 p-4">
             <p class="col-4">{{ article.content }}</p>
-            <div class="col-6"><img src="{{ article.image }}" alt="{{ article.title }}" class="img-fluid"></div>
+            <div class="col-6"><img src="{{ asset('upload/articles/' ~ article.image) }}" alt="{{ article.title }}" class="img-fluid"></div>
         </div>
             {% else %}
                 <h1>{{ article.category.title }}</h1>
@@ -24,7 +24,7 @@
                 <h2 class="col-12">{{ article.title }}</h2>
                 <div class="row align-items-center justify-content-around mt-5 p-4">
                     <p class="col-4">{{ article.content }}</p>
-                    <div class="col-6"><img src="{{ article.image }}" alt="{{ article.title }}" class="img-fluid"></div>
+                    <div class="col-6"><img src="{{ asset('upload/articles/' ~ article.image) }}" alt="{{ article.title }}" class="img-fluid"></div>
 
                 </div>
 
