@@ -19,10 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="securisation de la zone admin">
+    <list default="true" id="633b0bbe-fe20-49ce-8fff-8f750ac78c2b" name="Default Changelist" comment="ajout d un bouton se deconecter que si ont est connecter">
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +206,7 @@
       <workItem from="1606500916254" duration="613000" />
       <workItem from="1606570088216" duration="68000" />
       <workItem from="1606592451987" duration="600000" />
-      <workItem from="1606724756385" duration="32142000" />
+      <workItem from="1606724756385" duration="39147000" />
     </task>
     <task id="LOCAL-00001" summary="reprise a zero &#10;ajout de la partie admin">
       <created>1606425481745</created>
@@ -291,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606816241514</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ajout d un bouton se deconecter que si ont est connecter">
+      <created>1606818139436</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606818139436</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +332,8 @@
     <MESSAGE value="ajout des contraintes" />
     <MESSAGE value="jointure table + modif formulaire pour ajouter une categorie a un article" />
     <MESSAGE value="securisation de la zone admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="securisation de la zone admin" />
+    <MESSAGE value="ajout d un bouton se deconecter que si ont est connecter" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout d un bouton se deconecter que si ont est connecter" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="419" key="#Composer" timestamp="1606414664282">
@@ -328,17 +344,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="691" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606488376784" />
-    <state x="746" y="263" key="NewPhpClassDialog" timestamp="1606424559311">
+    <state x="746" y="263" key="NewPhpClassDialog" timestamp="1606818225537">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="746" y="263" key="NewPhpClassDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606424559311" />
+    <state x="746" y="263" key="NewPhpClassDialog/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606818225537" />
     <state x="462" y="185" key="SettingsEditor" timestamp="1606494524893">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="462" y="185" key="SettingsEditor/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606494524893" />
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606816245691">
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2" timestamp="1606818143501">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606816245691" />
+    <state x="553" y="273" key="Vcs.Push.Dialog.v2/3840.540.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1606818143501" />
   </component>
 </project>
